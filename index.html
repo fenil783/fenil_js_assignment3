@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+body {
+
+ 
+	}
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+</head>
+<body id="bid">
+
+ 
+<div id="div1"></div>
+ 
+<input type="text" id="in"/>
+<input type="submit"  onclick="func()"></input>
+
+
+<script>
+function func()
+{
+   var ret = document.getElementById("in").value;
+   
+if(ret!="")
+   {
+switch(ret) {
+    case '1':
+       var counter = 0;
+ counter++; ++counter; 
+ alert("The answer is " +counter+ " bcoz the value initialised to counter is 0. So after  post- incrementing counter we get value 1 and then again pre- incrementing the counter we get value as 2 ");
+
+        break;
+ case '2':
+var n = 2; n *= 3 + 5; 
+alert("The answer is " +n+ " bcoz the value of n = 2  so when n*=3+5 we get 2*8 which is equal to 16 ");
+
+        break;
+    case '3':
+var a = 1, b = 1; 
+var c = ++a; 
+var d = b++;
+alert("a = "+a+"\n"+"b = "+ b+"\n"+"c = "+c+"\n"+"d = "+d);
+	break;
+case '4':
+var a = 2; var x = 1 + (a *= 2);
+
+alert("a = "+a+"\n"+"x = "+ x);
+
+break;
+case '5':
+ var ip = prompt("input");
+
+ var res = ip.split(",");
+ 
+ 
+ if(res[0]>res[1] && res[0]>res[2] && res[0]>res[3])
+ {
+ alert("a is larger");
+
+ }
+
+ else if(res[1]>res[2] && res[1]>res[3] )
+ {
+ alert("b is larger");
+
+ }
+else if(res[2]>res[3] )
+ {
+ alert("c is larger");
+
+ }
+else
+{
+alert("d is larger");
+}
+ 
+
+break;
+case '6':
+alert("(a + b < 4) ? result = 'Below' :result = 'Over' ");
+
+break;
+case '7':
+document.getElementById("div1").innerHTML="yo";
+
+
+break;
+case '8':
+ var age = prompt("input");
+
+ if(age>=13 && age<=19)
+ alert("teenager");
+else
+ alert("not a teenager");
+
+break;
+
+
+case '9':
+var d = new Date();
+
+
+
+ switch (d.getDay())
+ {
+ case 1 :
+ alert(" Monday");
+ break ;
+  
+  case 2 :
+ alert("Tuesday");
+ break ;
+  
+ case 3 :
+ alert("Wednesday");
+ break ;
+  
+ case 4 :
+ alert("Thursday");
+ break ;
+  
+ case 5 :
+ alert("Friday");
+ break ;
+  
+ case 6 :
+ alert("Saturday !!Yupiee its  weekend");
+ break ;
+    
+case 7 :
+ alert("Soja Bhai aaj Sunday hai ");
+ break ;
+    	
+ }
+break;
+ 
+
+  
+ 
+ case '10':
+ var h = new Date();
+var a= h.getHours();
+
+ if (a==24 || a>=0 && a<=12 )
+ {
+ document.body.style.backgroundColor = "yellow";
+ }
+ else if (a>=12 && a<=18)
+{ document.body.style.backgroundColor = "blue";
+
+
+}
+ else
+ document.body.style.backgroundColor = "black";
+	
+ break;
+
+		
+}		
+		
+}
+}
+		
+	
+            
+</script>
+
+
+   
+  
+  </form>
+</div>
+
+</body>
+</html>
